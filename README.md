@@ -22,11 +22,6 @@ Model-wise: Random Forest Regressor, but I made sure to always compare it agains
 > Don't just say "model done."
 > Share the "aha!" moments, they matter more than the accuracy score
 
-Honestly the biggest aha moment was that the model barely beat guessing "tomorrow will look like today" — it actually came in a little worse (-2% MAE). My first instinct was that something was broken, but it's not — it's just what daily gold prediction actually looks like. Gold moves close to a random walk day to day, and I think that's a more honest finding than faking a model that "wins."
-
-Second thing I noticed: the errors aren't spread out evenly. When I split the mistakes by volatility level, the model is clearly worse on high-volatility days — which, annoyingly, is exactly when people want a forecast the most. That felt like the actual useful part of the project — not "here's tomorrow's price," but "here's how much you should trust this today."
-
-Third one: the US Dollar Index (DXY) basically carries the model. Every time I checked feature importance, DXY came out on top, ahead of anything gold-specific like RSI or moving averages. Kind of humbling, honestly — turns out I wasn't really predicting "gold," I was mostly predicting the dollar and letting gold ride along.
 
 4. How would a business or a community (for Social Impact Projects) benefit from your work?
 > Be specific. Think money saved, process improves, better decisions made
